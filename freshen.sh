@@ -10,9 +10,13 @@ PACMAN_MIRRORLIST_BACKUP=/etc/pacman.d/mirrorlist.backup
 # Checks the user's system to see if rankmirrors and pacman-contrib are installed, and installs them if needed.
 if [[ $EUID -ne 0 ]]; then
     echo "The Freshen script needs to be ran as root."
+    echo "Freshen (c) 2024-2024 https://github.com/cbrbygones/freshen"
+    echo "This script is licensed under the GNU General Public License v3.0"
     exit 1
 else
     echo "Starting the Freshen script..."
+    echo "Freshen (c) 2024-2024 https://github.com/cbrbygones/freshen"
+    echo "This script is licensed under the GNU General Public License v3.0"
 fi
 
 REQUIRED_PACKAGES=("pacman-contrib" "rankmirrors")
