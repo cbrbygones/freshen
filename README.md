@@ -1,5 +1,13 @@
 # Freshen
-A script that automates the mirror refreshing process on Arch Linux so you can update better.
+This script automates the mirror ranking and refreshing process on Arch Linux, making it more efficient on the user's end.
+It is important to keep mirrorlists up to date, since mirrrors can become bad and result in slower package updates/installs.
+
+All information regarding Arch mirrors can be viewed on the [Arch Wiki](https://wiki.archlinux.org/title/mirrors).
+
+__FEATURES__
++ Checks to see if the required `pacman-contrib` and `rankmirrors` packages are installed on the system.
++ Pulls the latest mirrors from a user's [custom mirrorlist](https://archlinux.org/mirrorlist/).
++ Automatically creates a backup before updating, and restores from it if an error occurs.
 
 ## Run
 
