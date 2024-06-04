@@ -19,7 +19,7 @@ else
     echo "This script is licensed under the GNU General Public License v3.0"
 fi
 
-REQUIRED_PACKAGES=("pacman-contrib" "rankmirrors")
+REQUIRED_PACKAGES=("pacman-contrib" "curl")
 for pkg in "${REQUIRED_PACKAGES[@]}"; do
     if ! pacman -Qi $pkg &> /dev/null; then
         echo "$pkg is not installed. Installing $pkg..."
