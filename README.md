@@ -5,7 +5,7 @@ It is important to keep mirrorlists up to date, since mirrrors can become bad an
 All information regarding Arch mirrors can be viewed on the [Arch Wiki](https://wiki.archlinux.org/title/mirrors).
 
 __FEATURES__
-+ Checks to see if the required `pacman-contrib` and `rankmirrors` packages are installed on the system.
++ Checks to see if the required `pacman-contrib` and `curl` packages are installed on the system.
 + Pulls the latest mirrors from a user's [custom mirrorlist](https://archlinux.org/mirrorlist/).
 + Automatically creates a backup before updating, and restores from it if an error occurs.
 
