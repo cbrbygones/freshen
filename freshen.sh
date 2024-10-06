@@ -24,8 +24,8 @@ fi
 REQUIRED_PACKAGES=("pacman-contrib" "curl")
 for pkg in "${REQUIRED_PACKAGES[@]}"; do
     if ! pacman -Qi "$pkg" &> /dev/null; then
-        echo "$pkg is not installed. Installing $pkg..."
-        pacman -S --noconfirm "$pkg"
+        echo "$pkg is not installed. Please install $pkg..."
+        exit 1
     else
         echo "Required packages are installed. Creating a backup of the mirrorlist..."
     fi
